@@ -31,7 +31,9 @@
 |:-------------:|:-------------:|:-------------:|
 | Create a new Drupal 7 project | use the drupal-core | complete |
 | Create and update README.md with complete info regarding project | touch README.md | complete |
-|  | | |
+| Download user modules | see list below | complete |
+| Set up user profiles (views) | use the goooey | incomplete |
+|  
 
 
 
@@ -69,6 +71,8 @@ There are no known bugs at this time, but please contact the creator with questi
 * Flag Friend url(https://www.drupal.org/project/flag_friend)
 * Flag url(https://www.drupal.org/project/flag)
 * User Relationships url(https://www.drupal.org/project/user_relationships)
+* PrivateMSg url(https://www.drupal.org/project/privatemsg)
+* Follow url(https://www.drupal.org/project/follow)
 
 ## Licensing
 This application features MIT licensing.
