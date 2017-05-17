@@ -12,7 +12,11 @@
             <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
           <?php endif; ?>
         </div>
-        <nav> </nav>
+        <nav>
+          <div id='main-menu'>
+            <?php print theme('links_system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('links', 'menu', 'inline', 'clearfix')))); ?>
+          </div>
+        </nav>
       </div>
       <!--  header -->
       <div class="header">
