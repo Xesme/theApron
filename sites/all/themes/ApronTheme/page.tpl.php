@@ -7,6 +7,10 @@
       <div class="dashboard">
         <?php print render($page['dashboard']); ?>
         <div id='logo'>
+          <?php if ($logo): ?>
+            <a href="<?php print $base_path: ?>" title="<?php print t('Click here to return home')?>"></a>
+            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          <?php endif; ?>
         </div>
         <nav> </nav>
       </div>
