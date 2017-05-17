@@ -16,8 +16,15 @@ body {
 
 /* vvvvvvvv Header vvvvvvvv */
 /* -------- Dashboar/Navbar -------- */
+
 .dashboard {
+  position: relative;
+  height: 85px;
   background-color: lightblue;
+}
+
+.dashboard * {
+  /*width: 100%;*/
 }
 
 .region-dashboard a {
@@ -30,16 +37,87 @@ body {
   color: #red;
 }
 
+#logo img {
+  display: none;
+}
+
+#page-wrapper > div > header > div.dashboard > div.region.region-dashboard {
+display: flex;
+/*flex-wrap: wrap;*/
+flex-direction: row;
+}
+
+/* -------- Search Bar -------- */
+
+#block-search-form {
+  position: absolute;
+  top: 5px; left: 5px;
+  width: 160px;
+}
+
+#edit-search-block-form--2 {
+  width: 150px;
+}
+
+#edit-submit {
+  width: 75px;
+}
+
 /* -------- User Menu -------- */
 
 #block-system-user-menu {
-
+  position: absolute;
+  top: 5px; right: 15px;
+  width: 100px;
 }
 
-.menu > * {
+#block-system-user-menu > div.content > ul {
+  position: absolute;
+  top: 5px; right: 65px;
+  width: 100px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: height 2s;
+  transition-timing-function: ease-out;
+  height: 30px;
+
+  /*border: 2px solid red;*/
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+#block-system-user-menu > div.content > ul:hover {
+  height: 225px;
+  /*box-shadow: 0px 0px 30px;*/
+}
+
+#block-system-user-menu > div.content > ul:before {
+  /*opacity: 1;
+  transition: opacity 1s linear;*/
+  content: url('../img/min.svg')
+}
+
+/*#block-system-user-menu > div.content > ul*/
+
+ul li.leaf {
   list-style: none !important;
+  display: flex;
+  flex-direction: column !important;
 }
 
+#block-system-user-menu > div.content > ul > li > a {
+  color: #000;
+}
+
+#block-system-user-menu > div.content > ul > li:after {
+  color: #000;
+  content: "_________" ;
+
+}
+
+#block-system-user-menu > div.content > ul > li.last.leaf > a {
+  width: 55px;
+}
 
 
 /* -------- Main_Menu -------- */
