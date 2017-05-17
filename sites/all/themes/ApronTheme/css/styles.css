@@ -1,0 +1,81 @@
+body {
+  background-color: red;
+}
+
+.container {
+  background-color: white;
+  border:  2px solid green;
+  padding: 15px;
+}
+
+.main-wrap {
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+}
+
+/* vvvvvvvv Header vvvvvvvv */
+/* -------- Dashboar/Navbar -------- */
+.dashboard {
+  background-color: lightblue;
+}
+
+.region-dashboard a {
+  font-style: normal;
+  text-decoration: none;
+  color: #fff;
+}
+
+.region-dashboard a:hover {
+  color: #red;
+}
+
+/* -------- User Menu -------- */
+
+#block-system-user-menu {
+
+}
+
+.menu > * {
+  list-style: none !important;
+}
+
+
+
+/* -------- Main_Menu -------- */
+nav {
+  background-color: purple;
+}
+/* -------- Header-Wrap -------- */
+.header-wrap {
+  background-color: teal;
+}
+/* ^^^^^^^^ Header ^^^^^^^^ */
+
+
+/* vvvvvvvv Sidebar vvvvvvvv */
+/* -------- Social-Wrap -------- */
+.social-wrap {
+  background-color: darkgreen;
+}
+
+/* -------- Sidebar-Wrap -------- */
+.sidebar-wrap {
+  background-color: lime;
+}
+/* ^^^^^^^^ Sidebar ^^^^^^^^ */
+
+
+/* vvvvvvvv Content vvvvvvvv */
+/* -------- Content-Wrap -------- */
+.content-wrap {
+  background-color: pink;
+}
+/* ^^^^^^^^ Content ^^^^^^^^ */
+
+/* vvvvvvvv Footer vvvvvvvv */
+/* -------- Footer-Wrap -------- */
+.footer-wrap {
+  background-color: orange;
+}
+/* ^^^^^^^^ Footer ^^^^^^^^ */
