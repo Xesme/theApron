@@ -1,14 +1,12 @@
 body {
-  background-color: #fff;
+  background-color: purple;
 }
 
 .container {
-  background-color: purple;
-  border:  5px solid red;
-  padding: 45px;
+  background-color: rgba(4, 4, 4, 0.1);;
+  padding: 20px;
   height: 1200px;
-  border-right: 5px grey;
-  border-left: 5px grey;
+  border-radius: 15px;
 }
 
 .main-wrap {
@@ -48,7 +46,6 @@ body {
 
 #page-wrapper > div > header > div.dashboard > div.region.region-dashboard {
 display: flex;
-/*flex-wrap: wrap;*/
 flex-direction: row;
 }
 
@@ -60,7 +57,6 @@ flex-direction: row;
   width: 300px;
   display: flex;
   flex-direction: row;
-  /*margin-bottom: 40px;*/
 }
 
 #edit-search-block-form--2 {
@@ -147,7 +143,14 @@ nav {
 }
 /* -------- Header-Wrap -------- */
 .header-wrap {
-  background-color: teal;
+  /*background-image: url('../img/tri.jpg');*/
+  background: url('../img/tri.jpg'),linear-gradient(to top, rgba(255,255,255,1) 37%,rgba(255,255,255,0) 100%);
+  height: 150px;
+  border-radius: 15px;
+  /*box-shadow: inset 0 0 200px #fff, inset 0 0 200px #fff;*/
+  /*position: absolute;*/
+  /*clip: rect(5px, 295px, 295px, 5px);*/
+  margin-bottom: 30px;
 }
 /* ^^^^^^^^ Header ^^^^^^^^ */
 
@@ -175,7 +178,7 @@ nav {
 /* vvvvvvvv Footer vvvvvvvv */
 /* -------- Footer-Wrap -------- */
 .footer-wrap {
-  background-color: teal;
+  background-color: rgba(0, 0, 0, 0.1);;
   height: 100px;
 }
 /* ^^^^^^^^ Footer ^^^^^^^^ */
