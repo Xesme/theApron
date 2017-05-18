@@ -32,8 +32,12 @@
 | Create a new Drupal 7 project | use the drupal-core | complete |
 | Create and update README.md with complete info regarding project | touch README.md | complete |
 | Download user modules | see list below | complete |
-| Set up user profiles (views) | use the goooey | incomplete |
-|  
+| Set up user profiles (views) | use the goooey | complete |
+| Install list of modules | see list below | complete |
+| Create logo and necessary psd files | use photoshop ? | complete |
+| Implement styling with custom theme | create custom theme | started |
+| Fix bug caused with user profile, not displaying correctly in views | fix views (user_profile) | incomplete |
+| Use Yelp Fusion to generate work history |  Implement Yelp Fusion API | incomplete |
 
 
 
