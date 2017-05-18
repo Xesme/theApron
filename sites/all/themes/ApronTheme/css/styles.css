@@ -1,3 +1,9 @@
+#block-user-login {
+position: absolute;
+top: 750px; left: 750px;
+}
+
+
 body {
   background-color: #fff;
 }
@@ -54,7 +60,7 @@ flex-direction: row;
 #block-search-form {
   position: absolute;
   top: 12px; left: 15px;
-  width: 300px;
+  width: 400px;
   display: flex;
   flex-direction: row;
 }
@@ -78,6 +84,8 @@ flex-direction: row;
   font-size: 12px;
   font-weight: bold;
 }
+
+
 /* -------- Main Menu/ Navigation -------- */
 
 #block-system-main-menu {
@@ -174,9 +182,6 @@ ul li.leaf {
 #block-system-user-menu > div.content > ul > li.last.leaf > a {
   width: 55px;
 }
-
-border-bottom: 2px solid gray;
-
 /* -------- Main_Menu -------- */
 nav {
   background-color: purple;
@@ -202,6 +207,31 @@ nav {
   display: inline-flex;
 }
 
+#block-system-navigation > div.content {
+}
+
+#block-system-navigation > div.content > ul > * {
+  width: 150px;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  /*border: 2px solid red;*/
+  z-index: -45;
+  margin-bottom: -45px;
+}
+
+#block-system-navigation > div.content > ul > li > a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 15px;
+
+  cursor: pointer;
+}
 
 /* ^^^^^^^^ Navigation Tabs ^^^^^^^^ */
 
@@ -225,13 +255,25 @@ nav {
 /* vvvvvvvv Content vvvvvvvv */
 /* -------- Content-Wrap -------- */
 .content-wrap {
-  background-color: pink;
+  /*background-color: pink;*/
   width: 90%;
   padding: 35px;
 }
 
 
 /* -------- Comments -------- */
+
+#comments {
+  display: flex;
+  flex-direction: column;
+}
+
+#node-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 65px;
+}
+
 
 #edit-preview {
   width: 75px;
@@ -247,10 +289,42 @@ nav {
 }
 
 #comment-form > div {
-width: 350px;
+  width: 350px;
 }
 
 #edit-comment-body-und-0-format {
+  display: none;
+}
+
+#comment-body-add-more-wrapper > div > div > div > div {
+  display: none;
+}
+
+#edit-subject {
+  margin-left: 45px;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 5px grey;
+  /*border: 1px solid #fff;*/
+  width: 200px;
+  height: 25px;
+}
+
+#edit-comment-body-und-0-value {
+  margin-left: 45px;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 5px grey;
+  height: 200px;
+}
+
+#edit-actions {
+  margin-left: 75px;
+}
+
+#edit-author--2 {
+  display: none;
+}
+
+#node-1 > h2 > a {
   display: none;
 }
 
@@ -264,12 +338,13 @@ width: 350px;
 /* -------- Profile-------- */
 
 #page-wrapper > div.container > div.content-wrap > div > * {
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 #block-system-main {
   display: inline-flex;
-  border: 2px solid red;
+  margin-left: 45px;
+  /*border: 2px solid green;*/
 }
 
 #block-system-main > div > div > div {

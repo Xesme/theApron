@@ -41,6 +41,16 @@
 | Use Yelp Fusion to generate work history |  Implement Yelp Fusion API | incomplete |
 
 
+### Still needed for Demo Day
+* Custom Theme needs to be finished
+
+* Lading page (greeting module started)
+
+* User Profile views (basic set up not meant for long term)
+
+* Yelp Fusion Api
+  * Add ability to add into work history views
+
 
 ## Setup/Installation Requirements
 
@@ -76,7 +86,7 @@ There are no known bugs at this time, but please contact the creator with questi
 * Flag Friend url(https://www.drupal.org/project/flag_friend)
 * Flag url(https://www.drupal.org/project/flag)
 * User Relationships url(https://www.drupal.org/project/user_relationships)
-* PrivateMSg url(https://www.drupal.org/project/privatemsg)
+* PrivateMsg url(https://www.drupal.org/project/privatemsg)
 * Follow url(https://www.drupal.org/project/follow)
 
 ## Licensing
