@@ -1,6 +1,6 @@
 # Cipher Site
 
-## Created by Xia Amendolara 28th, 2017
+## Created by Xia Amendolara May 15th, 2017
 
   The Apron is a social networking app made in Drupal 7. The Apron will serve as a resource for individuals working in and around the service industry, such as but not limited to: bartenders, servers, and cooks.
 
@@ -10,20 +10,21 @@
 
 * As a user I would like to be able to edit my profile, in order to add information, such as: name, age, location, work history, skills, and accomplishments.
 
-* As a user I would like to search the site by  users name or by business.
-
 * As a user I would like the ability to connect with other users by private messaging.
+
+* As a user I would like to add users to 'my connections'.
+
 
 ## Wish List (continued development)
 
-* As a user I would like to add users to 'my connections'.
-  * This will require modules.
+* As a user I would like to search the site by  users name or by business.
+  * This will require Yelp Fusion Api.
 
 * As a user I would like to add status updates 'my story'.
-  * This will require modules.
+  * This will require modules and further research.
 
 * As a user I would like to view 'my connections' stories on my homepage feed.
-  * This will require modules.
+* This will require modules and further research.
 
 ## Implementation Plan
 

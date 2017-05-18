@@ -1,31 +1,31 @@
 <!-- begin document -->
 <div id='page-wrapper'>
-  <div class="container">
     <?php print render($page['page_top']); ?>
 
     <!-- dashboard/toolbar/navbar -->
-    <header>
       <div class="dashboard">
         <?php print render($page['dashboard']); ?>
-        <div id='logo'>
-          <?php if ($logo): ?>
-            <a href="<?php print $base_path; ?>" title="<?php print t('Click here to return home');?>">
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-          <?php endif; ?>
-        </div>
-        <nav>
-          <div id='main-menu'>
-            <?php print theme('links_system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('links', 'menu', 'inline', 'clearfix')))); ?>
-          </div>
-        </nav>
       </div>
 
       <!--  header -->
-      <div class="header-wrap">
-        <?php print render($page['header']); ?>
-      </div>
-    </header>
+      <header>
+        <div id='logo'>
+          <?php if ($logo): ?>
+            <a href="<?php print $base_path; ?>" title="<?php print t('Click here to return home');?>">
+              <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+            <?php endif; ?>
+          </div>
+          <nav>
+            <div id='main-menu'>
+              <?php print theme('links_system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('links', 'menu', 'inline', 'clearfix')))); ?>
+            </div>
+          </nav>
+        <div class="header-wrap">
+          <?php print render($page['header']); ?>
+        </div>
+      </header>
 
+    <div class="container">
     <!-- Main Wrap -->
     <div class="main-wrap">
     <!-- sidebar -->
@@ -65,12 +65,13 @@
       </div>
     </div>
 
-  <!-- footer -->
-  <div class="footer-wrap">
-    <?php print render($page['footer']); ?>
-  </div>
-
-  <?php print render($page['page_bottom']); ?>
 </div>  <!-- end of container -->
+<!-- footer -->
+<div class="footer-wrap">
+  <hr>
+  <?php print render($page['footer']); ?>
+</div>
+<hr>
+<?php print render($page['page_bottom']); ?>
 </div>
 <!-- end of document  -->
