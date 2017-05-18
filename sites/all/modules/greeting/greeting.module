@@ -1,0 +1,33 @@
+<?php
+function greeting_menu() {
+  $items = array();
+  $items['hello_user'] = array(
+    'title' => "Welcome User!",
+    'page callback' => 'say_hello',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  $items['goodbye'] = array(
+    'title' => "Thanks for visting!",
+    'page callback' => 'say_goodbye',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function say_hello() {
+  return "<p>Landing page</p>";
+}
+
+function say_goodbye() {
+  return "<p>Landing page</p>";
+}
+
+function greeting_user_login() {
+  $_GET['destination'] = 'hello_user';
+}
+
+function greeting_user_logout() {
+  $_GET['destination'] = 'goodbye';
+}

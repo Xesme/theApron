@@ -246,8 +246,6 @@ nav {
   margin-left: 5px;
 }
 
-
-
 #comment-form > div {
 width: 350px;
 }
@@ -256,6 +254,33 @@ width: 350px;
   display: none;
 }
 
+/* -------- Photos -------- */
+#block-system-main > div > div > div > div.field.field-name-field-profile-image.field-type-image.field-label-above > div.field-items > div > img {
+  height: 200px;
+  border-radius: 180px;
+}
+
+
+/* -------- Profile-------- */
+
+#page-wrapper > div.container > div.content-wrap > div > * {
+  border: 2px solid red;
+}
+
+#block-system-main {
+  display: inline-flex;
+  border: 2px solid red;
+}
+
+#block-system-main > div > div > div {
+  display: inline-flex;
+  border: 2px solid red;
+}
+
+#block-system-main > div > div > div > * {
+  font-size: 18px;
+  font-weight: bold;
+}
 
 /* ^^^^^^^^ Content ^^^^^^^^ */
 
