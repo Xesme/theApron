@@ -7,12 +7,12 @@ body {
   padding: 20px;
   height: 1200px;
   border-radius: 15px;
+  display: flex;
+  flex-direction: row;
 }
 
 .main-wrap {
   background-color: bisque;
-  display: flex;
-  flex-direction: row;
 }
 
 /* vvvvvvvv Header vvvvvvvv */
@@ -78,6 +78,45 @@ flex-direction: row;
   font-size: 12px;
   font-weight: bold;
 }
+/* -------- Main Menu/ Navigation -------- */
+
+#block-system-main-menu {
+  display: inline-flex;
+  position: absolute;
+  top: 0px; left: 755px;
+  width: 120px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: width 2s, opacity 1.5s linear;
+  transition-timing-function: ease-out;
+  opacity: 1;
+}
+
+#block-system-main-menu:hover {
+  width: 450px;
+}
+
+#block-system-main-menu:hover > h2 {
+  transition: opacity 1.5s linear;
+  opacity: 0;
+}
+
+#block-system-main-menu > div.content > ul {
+    display: inline-flex;
+}
+
+#block-system-main-menu:hover > div.content > ul * {
+}
+
+#block-system-main-menu > div.content > ul * {
+  opacity: 1;
+  color: #000;
+  font-weight: bold;
+}
+
+#block-system-main-menu > div.content {
+  padding: 0px;
+}
 
 /* -------- User Menu -------- */
 
@@ -105,7 +144,6 @@ flex-direction: row;
 
 #block-system-user-menu > div.content > ul:hover {
   height: 225px;
-  /*background-color: rgba(255, 255, 255, 0.9);*/
   background: linear-gradient(to top, rgba(255,255,255, 0.1) 37%,rgba(255,255,255, 0) 100%);
   text-shadow: 0px 0px 1px;
 }
@@ -142,15 +180,13 @@ ul li.leaf {
 nav {
   background-color: purple;
 }
+
 /* -------- Header-Wrap -------- */
 .header-wrap {
   background-image: url('../img/tri.jpg');
-  /*background: url('../img/tri.jpg'),linear-gradient(to top, rgba(255,255,255,1) 37%,rgba(255,255,255,0) 100%);*/
   height: 150px;
   border-radius: 15px;
   box-shadow: inset 0 0 200px #fff, inset 0 0 200px #fff;
-  /*position: absolute;*/
-  /*clip: rect(5px, 295px, 295px, 5px);*/
   margin-bottom: 30px;
 }
 /* ^^^^^^^^ Header ^^^^^^^^ */
@@ -173,6 +209,7 @@ nav {
 /* -------- Content-Wrap -------- */
 .content-wrap {
   background-color: pink;
+  width: 90%;
 }
 /* ^^^^^^^^ Content ^^^^^^^^ */
 

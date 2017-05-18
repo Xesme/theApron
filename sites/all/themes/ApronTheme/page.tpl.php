@@ -24,7 +24,10 @@
           <?php print render($page['header']); ?>
         </div>
       </header>
+      <div class="navigation">
+        <?php print render($page['highlighted']); ?>
 
+      </div>
     <div class="container">
     <!-- Main Wrap -->
     <div class="main-wrap">
@@ -60,9 +63,9 @@
       <?php print $messages; ?>
 
     <!-- content of the page -->
-      <div class="content-wrap">
-        <?php print render($page['content']); ?>
-      </div>
+    </div>
+    <div class="content-wrap">
+      <?php print render($page['content']); ?>
     </div>
 
 </div>  <!-- end of container -->
