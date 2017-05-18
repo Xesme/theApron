@@ -24,16 +24,21 @@
           <?php print render($page['header']); ?>
         </div>
       </header>
-      <div class="navigation">
-        <?php print render($page['highlighted']); ?>
 
+      <!-- navigation tabs -->
+      <div class="navigation-wrap">
+        <?php print render($page['highlighted']); ?>
       </div>
+
+      <!-- container -->
     <div class="container">
     <!-- Main Wrap -->
     <div class="main-wrap">
     <!-- sidebar -->
     <div class="sidebar-wrap">
       <!-- social feed icons -->
+      <!-- error messages -->
+      <?php print $messages; ?>
         <div class="social-wrap">
           <?php print render($page['social']); ?>
         </div>
@@ -59,8 +64,6 @@
         <?php print render($tabs); ?>
       <?php endif; ?>
 
-    <!-- error messages -->
-      <?php print $messages; ?>
 
     <!-- content of the page -->
     </div>

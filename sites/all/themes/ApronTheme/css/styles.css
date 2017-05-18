@@ -175,11 +175,15 @@ ul li.leaf {
   width: 55px;
 }
 
+border-bottom: 2px solid gray;
 
 /* -------- Main_Menu -------- */
 nav {
   background-color: purple;
 }
+
+
+/* vvvvvvvv Header vvvvvvvv */
 
 /* -------- Header-Wrap -------- */
 .header-wrap {
@@ -191,16 +195,29 @@ nav {
 }
 /* ^^^^^^^^ Header ^^^^^^^^ */
 
+/* vvvvvvvv Navigation Tabs vvvvvvvv */
+
+/* -------- Navigation-Wrap -------- */
+.navigation-wrap * {
+  display: inline-flex;
+}
+
+
+/* ^^^^^^^^ Navigation Tabs ^^^^^^^^ */
+
 
 /* vvvvvvvv Sidebar vvvvvvvv */
 /* -------- Social-Wrap -------- */
 .social-wrap {
   background-color: darkgreen;
+  height: 45%;
 }
 
 /* -------- Sidebar-Wrap -------- */
 .sidebar-wrap {
   background-color: lime;
+  height: 45%;
+
 }
 /* ^^^^^^^^ Sidebar ^^^^^^^^ */
 
@@ -210,7 +227,36 @@ nav {
 .content-wrap {
   background-color: pink;
   width: 90%;
+  padding: 35px;
 }
+
+
+/* -------- Comments -------- */
+
+#edit-preview {
+  width: 75px;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  background-color: orange;
+  box-shadow: outset 0px 0px 3px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+
+
+#comment-form > div {
+width: 350px;
+}
+
+#edit-comment-body-und-0-format {
+  display: none;
+}
+
+
 /* ^^^^^^^^ Content ^^^^^^^^ */
 
 /* vvvvvvvv Footer vvvvvvvv */
